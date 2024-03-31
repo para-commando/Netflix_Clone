@@ -2,14 +2,35 @@
     padding: 0;
     margin: 0;
 }
-main{
+.main{
     background-image: url("./assets/images/netflixBackgroundImage.jpg");
     height: 80vh;
+    position: relative;
+    /* so that center portion of the website is seen or considered */
+    background-position: center center;
+    /* so that when streched, the image also adjusts itself */
+    background-size: max(1200px,100vw);
+    /* so that the image doesnt repeat when screen dimensions increases */
+    background-repeat: no-repeat;
 }
 
-main .box{
+.main .box{
     height: 80vh;
     width: 100%;
     opacity: 0.44;
+    /* this is required to give that black tinge to the image */
     background-color: black;
+    position: absolute;
+    top:0;
 }
+
+nav{
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 80vw;
+     height: 62px;
+}
+
+ 
