@@ -145,3 +145,27 @@
      justify-content: center;
      gap: 16px;
  }
+
+ .first {
+     display: flex;
+     color: white;
+     justify-content: center;
+     align-items: center;
+     max-width: 70vw;
+     margin: auto;
+ }
+
+ .secImg {
+     position: relative;
+
+ }
+
+ .secImg img {
+     width: 30vw;
+ }
+
+ .secImg video {
+     position: absolute;
+     top: 51px;
+     right: 0;
+ }
