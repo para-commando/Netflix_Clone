@@ -1,0 +1,147 @@
+ @import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+ * {
+     padding: 0;
+     margin: 0;
+     font-family: "Poppins", sans-serif;
+ }
+
+ body {
+     background-color: black;
+ }
+
+ .main {
+     background-image: url("./assets/images/netflixBackgroundImage.jpg");
+     height: 70vh;
+     position: relative;
+     /* so that center portion of the website is seen or considered */
+     background-position: center center;
+     /* so that when streched, the image also adjusts itself */
+     background-size: max(1200px, 100vw);
+     /* so that the image doesnt repeat when screen dimensions increases */
+     background-repeat: no-repeat;
+ }
+
+ .main .box {
+     height: 70vh;
+     width: 100%;
+     opacity: 0.69;
+     /* this is required to give that black tinge to the image */
+     background-color: black;
+     position: absolute;
+     top: 0;
+ }
+
+ nav {
+     display: flex;
+     margin: auto;
+     justify-content: space-between;
+     align-items: center;
+     max-width: 60vw;
+     height: 62px;
+ }
+
+ nav img {
+     color: red;
+     width: 114px;
+     /* so that the netflix logo appear above the netflix background image */
+     position: relative;
+     z-index: 10;
+     cursor: pointer;
+ }
+
+ nav button {
+     /* so that the button appear above the netflix background image */
+     position: relative;
+     z-index: 10;
+ }
+
+ .hero {
+     display: flex;
+     height: calc(100% - 62px);
+
+     flex-direction: column;
+     color: white;
+     align-items: center;
+     justify-content: center;
+     /* In the provided HTML code, the .hero div is nested inside the .main div. The .main div has a height of 80vh set in the CSS.
+    So, when the .hero div is set to height: 100%;, it means that it will take up 100% of the height of its parent container, which is the .main div. This ensures that the hero section fills the entire height of the .main container. */
+     /* subtracting height of nav bar */
+     font-family: "Martel Sans", sans-serif;
+     position: relative;
+     gap: 23px;
+     padding: 0 30px
+ }
+
+ .hero> :nth-child(1) {
+     /* we have put > symbol so that only immediate child is selected rather than any other sub child */
+     /* got these font related info from WhatFont chrome Extension */
+     font-weight: 750;
+     font-size: 42px;
+     font-style: normal;
+
+ }
+
+ .hero> :nth-child(2) {
+     font-weight: 400;
+     font-size: 24px;
+     font-style: normal;
+ }
+
+ .hero> :nth-child(3) {
+     font-weight: 400;
+     font-size: 20px;
+     font-style: normal;
+ }
+
+ .separation {
+     background-color: rgb(52, 52, 52);
+     height: 7px;
+ }
+
+
+
+ .main input {
+     padding: 9px 48px 9px 9px;
+     font-size: 14px;
+     border-radius: 4px;
+     /* for giving transaparent colours */
+     background-color: rgba(23, 23, 23, 0.2);
+     color: white;
+     border: 1px solid rgb(168, 164, 164);
+ }
+
+ .btn {
+     background-color: rgba(248, 243, 243, 0.011);
+     padding: 3px 8px;
+     font-weight: 400;
+     color: white;
+     border-radius: 4px;
+     border: 1px solid white;
+     cursor: pointer;
+     font-family: "Poppins", sans-serif;
+
+ }
+
+ .btn-red {
+     background-color: red;
+     color: white;
+     padding: 5px 28px 5px 30px;
+     font-size: 20px;
+     border-radius: 4px;
+     font-weight: 700;
+ }
+
+ .btn-red-sm {
+     background-color: red;
+     color: white;
+
+ }
+
+ .hero-buttons {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     gap: 16px;
+ }
