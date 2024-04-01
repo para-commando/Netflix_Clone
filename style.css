@@ -48,6 +48,7 @@
      /* so that the netflix logo appear above the netflix background image */
      position: relative;
      z-index: 10;
+     cursor: pointer;
  }
 
  nav button {
@@ -99,29 +100,48 @@
      height: 7px;
  }
 
+
+
+ .main input {
+     padding: 9px 48px 9px 9px;
+     font-size: 14px;
+     border-radius: 4px;
+     /* for giving transaparent colours */
+     background-color: rgba(23, 23, 23, 0.2);
+     color: white;
+     border: 1px solid rgb(168, 164, 164);
+ }
+
  .btn {
-     background-color: white;
+     background-color: rgba(248, 243, 243, 0.011);
      padding: 3px 8px;
-     font-weight: bold;
+     font-weight: 400;
+     color: white;
+     border-radius: 4px;
+     border: 1px solid white;
+     cursor: pointer;
+     font-family: "Poppins", sans-serif;
+
  }
 
  .btn-red {
      background-color: red;
      color: white;
-     padding: 3px 24px;
+     padding: 5px 28px 5px 30px;
      font-size: 20px;
      border-radius: 4px;
+     font-weight: 700;
  }
 
-.main input{
-    padding: 3px 24px;
-    font-size: 20px;
-    border-radius: 4px;
-    /* for giving transaparent colours */
-    background-color: rgba(23, 23, 23, 0.2);
-}
  .btn-red-sm {
      background-color: red;
      color: white;
 
+ }
+
+ .hero-buttons {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     gap: 16px;
  }
