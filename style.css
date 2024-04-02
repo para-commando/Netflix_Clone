@@ -74,7 +74,7 @@
      padding: 0 30px
  }
 
- .hero> :nth-child(1) {
+ .hero > :nth-child(1) {
      /* we have put > symbol so that only immediate child is selected rather than any other sub child */
      /* got these font related info from WhatFont chrome Extension */
      font-weight: 750;
@@ -83,13 +83,13 @@
 
  }
 
- .hero> :nth-child(2) {
+ .hero > :nth-child(2) {
      font-weight: 400;
      font-size: 24px;
      font-style: normal;
  }
 
- .hero> :nth-child(3) {
+ .hero > :nth-child(3) {
      font-weight: 400;
      font-size: 20px;
      font-style: normal;
@@ -162,10 +162,33 @@
 
  .secImg img {
      width: 30vw;
+     position: relative;
+     z-index: 10;
  }
 
  .secImg video {
      position: absolute;
      top: 51px;
      right: 0;
+  }
+  .first > div{
+   display: flex;
+    flex-direction: column;
+}
+ .first > div :first-child {
+     font-size: 48px;
+     font-weight: bolder;
  }
+
+ .first > div :nth-child(2) {
+     font-size: 24px;
+  }
+
+  .second {
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    max-width: 70vw;
+    margin: auto;
+}
