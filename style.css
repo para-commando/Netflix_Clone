@@ -13,7 +13,7 @@
 
  .main {
      background-image: url("./assets/images/netflixBackgroundImage.jpg");
-     height: 70vh;
+     height: 644px;
      position: relative;
      /* so that center portion of the website is seen or considered */
      background-position: center center;
@@ -24,7 +24,7 @@
  }
 
  .main .box {
-     height: 70vh;
+     height: 644px;
      width: 100%;
      opacity: 0.69;
      /* this is required to give that black tinge to the image */
@@ -74,7 +74,7 @@
      padding: 0 30px
  }
 
- .hero > :nth-child(1) {
+ .hero> :nth-child(1) {
      /* we have put > symbol so that only immediate child is selected rather than any other sub child */
      /* got these font related info from WhatFont chrome Extension */
      font-weight: 750;
@@ -83,24 +83,25 @@
 
  }
 
- .hero > :nth-child(2) {
+ .hero> :nth-child(2) {
      font-weight: 400;
      font-size: 24px;
      font-style: normal;
  }
 
- .hero > :nth-child(3) {
+ .hero> :nth-child(3) {
      font-weight: 400;
      font-size: 20px;
      font-style: normal;
+
  }
 
  .separation {
      background-color: rgb(52, 52, 52);
      height: 7px;
+     position: relative;
+     z-index: 20;
  }
-
-
 
  .main input {
      padding: 9px 48px 9px 9px;
@@ -148,11 +149,19 @@
 
  .first {
      display: flex;
+     justify-content: center;
+     max-width: 70vw;
+     margin: auto;
      color: white;
      justify-content: center;
      align-items: center;
-     max-width: 70vw;
-     margin: auto;
+ }
+
+
+ section.first>div {
+     display: flex;
+     flex-direction: column;
+     padding: 34px 0;
  }
 
  .secImg {
@@ -161,34 +170,188 @@
  }
 
  .secImg img {
-     width: 30vw;
+     width: 555px;
      position: relative;
      z-index: 10;
  }
 
  .secImg video {
      position: absolute;
-     top: 51px;
-     right: 0;
-  }
-  .first > div{
-   display: flex;
-    flex-direction: column;
-}
- .first > div :first-child {
+     top: 120px;
+     left: 74px;
+     width: 402px;
+
+ }
+
+ .first>div {
+     display: flex;
+     flex-direction: column;
+ }
+
+ .first>div :first-child {
      font-size: 48px;
      font-weight: bolder;
  }
 
- .first > div :nth-child(2) {
+ .first>div :nth-child(2) {
      font-size: 24px;
-  }
+ }
 
-  .second {
-    display: flex;
-    color: white;
-    justify-content: center;
-    align-items: center;
-    max-width: 70vw;
-    margin: auto;
-}
+ .second {
+     display: flex;
+     color: white;
+     justify-content: center;
+     align-items: center;
+     max-width: 70vw;
+     margin: auto;
+ }
+
+ .faq h2 {
+     text-align: center;
+     font-size: 48px;
+ }
+
+ .faq {
+     background: black;
+     color: white;
+     padding: 34px;
+
+ }
+
+ .faqbox {
+     font-size: 24px;
+     display: flex;
+     background-color: rgb(56, 55, 55);
+     padding: 24px;
+     max-width: 60vw;
+     margin: 11px auto;
+     justify-content: space-between;
+     cursor: pointer;
+ }
+
+ .faqbox:hover {
+     background-color: rgb(71, 71, 71);
+     transition: all 1s ease-out;
+ }
+
+ footer {
+     color: white;
+     margin: auto;
+     max-width: 60vw;
+     padding: 34px
+ }
+
+ footer .questions {
+     padding: 34px 0;
+ }
+
+
+ .footer {
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr 1fr;
+     color: white;
+ }
+
+
+
+ .footer-item {
+     display: flex;
+     flex-direction: column;
+     gap: 23px;
+ }
+
+ .footer a {
+     color: white;
+     font-size: 13px;
+ }
+
+
+ .subHero {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     margin: auto;
+ }
+
+ .subHero> :nth-child(1) {
+     padding: 14px 10px;
+     font-weight: 400;
+     font-size: 30px;
+     font-style: normal;
+     font-family: "Martel Sans", sans-serif;
+
+ }
+
+ .subHerobuttons input {
+     padding: 9px 48px 9px 9px;
+     font-size: 14px;
+     border-radius: 4px;
+     background-color: rgba(23, 23, 23, 0.2);
+     color: white;
+     border: 1px solid rgb(168, 164, 164);
+ }
+
+ @media screen and (max-width: 1300px) {
+     nav {
+         max-width: 90vw;
+     }
+
+     .first {
+         flex-wrap: wrap;
+     }
+
+     .secImg img {
+         width: 305px;
+     }
+
+     .secImg video {
+         top: 84px;
+         width: 227px;
+         left: 44px;
+
+     }
+
+     .footer {
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+         gap: 25px;
+         max-width: 100vw;
+         justify-content: center;
+         align-items: center;
+     }
+
+     footer {
+
+         max-width: 90vw;
+     }
+
+     .hero> :nth-child(1) {
+         font-size: 32px;
+     }
+
+     .hero> :nth-child(2) {
+         font-size: 18px;
+     }
+
+     .hero> :nth-child(3) {
+         font-size: 18px;
+     }
+
+     .hero-buttons {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         gap: 16px;
+     }
+
+     .faq h2 {
+         font-size: 32px;
+         text-align: center;
+     }
+
+     .footer-item {
+         align-items: center;
+     }
+ }
