@@ -1,4 +1,5 @@
 # Netflix Clone
+![mollie-sivaram-yubCnXAA3H8-unsplash](https://github.com/para-commando/Netflix_Clone/assets/123434846/1a0f0230-4041-4005-8ede-186b3d6940fa)
 
 **Hi👋 there!** I hope **you are** having an **amazing** day 😃🌻. Please *allow me* to brief you on what this repository is holding, this is a **Frontend project** based on **HTML and CSS** which demonstrates the user interface **clone** of one of the most **famous OTT** platforms, **Netflix**.
 
